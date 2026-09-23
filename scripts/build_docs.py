@@ -66,7 +66,7 @@ JOURNAL_ORDER = [
     "Review of Finance",
 ]
 
-# Raw data source categories, in the order Table 4.2 / 5.1a present them, with
+# Raw data source categories, in the order Table 4.1 Panel A presents them, with
 # the access class each carries. This mirrors LICENSED / PUBLIC in derive.py
 # and CODEBOOK.md §4, which is the canonical declaration of the classification
 # itself; duplicated here (as CLUSTER_ORDER and PRIMARY_TO_CODE already are)
@@ -801,7 +801,8 @@ def stats_md(s):
         n = s["clusters"][c]["n"]
         econ = mc.get("ECON", 0)
         rest = " · ".join(f"{METHOD_NAME[k].split(' /')[0].split(' on ')[0]} {v}"
-                          for k, v in mc.most_common() if k != "ECON")
+                          for k, v in sorted(mc.items(), key=lambda kv: (-kv[1], kv[0]))
+                          if k != "ECON")
         o.append(f"| {c} | {n} | {econ} ({fmt(100*econ/n, 0)} %) | {rest or '—'} |")
     o += [
         "",
@@ -981,7 +982,7 @@ def main():
     json.dump(
         {k: (dict(v) if isinstance(v, collections.Counter) else v) for k, v in s.items()},
         open(os.path.join(ROOT, "data", "stats.json"), "w"),
-        indent=2, default=str,
+        indent=2, default=str, sort_keys=True,
     )
     print("wrote data/stats.json")
 

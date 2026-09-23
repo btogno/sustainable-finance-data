@@ -219,7 +219,7 @@ def openness_band(score, data_lvl, code_lvl):
 
 
 def curation_tier(data_lvl, code_lvl):
-    """Curation tiers as defined in the thesis §6.3.
+    """Curation tiers as defined in the thesis §6.2.
 
     Seven tiers, ordered by what a reader can actually recover. They are
     mutually exclusive, evaluated in order, and together they cover all 109

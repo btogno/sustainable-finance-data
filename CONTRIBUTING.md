@@ -36,6 +36,7 @@ Everything else in the repository is generated, so it can be rebuilt at will:
 
 ```bash
 make build      # regenerate the derived table and all documentation
+make figures    # redraw the seven figures printed in the thesis (needs matplotlib)
 make verify     # re-derive every headline figure and assert it independently
 ```
 

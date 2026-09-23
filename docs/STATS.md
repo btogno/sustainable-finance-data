@@ -1,6 +1,6 @@
 # Statistics
 
-Recomputed from the frozen corpus on 2026-09-17. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
+Recomputed from the frozen corpus on 2026-09-23. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
 
 ## Corpus
 
@@ -176,12 +176,12 @@ Counted on an **any-mention** basis across the primary and secondary method fiel
 
 | Cluster | n | Standard econometrics | Other methods, any mention |
 |---|---|---|---|
-| Biodiversity & Nature | 14 | 10 (71 %) | NLP 3 · Survey instrument 2 · Satellite and remote sensing 2 · Other 1 · Machine learning (non-NLP) 1 · Experiment 1 |
+| Biodiversity & Nature | 14 | 10 (71 %) | NLP 3 · Satellite and remote sensing 2 · Survey instrument 2 · Experiment 1 · Machine learning (non-NLP) 1 · Other 1 |
 | Climate Physical Risk | 28 | 26 (93 %) | Satellite and remote sensing 12 · NLP 4 · Other 1 · Survey instrument 1 |
 | Climate Transition Risk & Corporate Emissions | 42 | 39 (93 %) | NLP 7 · Other 5 · Survey instrument 3 · Satellite and remote sensing 2 · Experiment 1 · Regulatory filing parsing 1 |
 | Green Bonds & Sustainable Debt | 13 | 12 (92 %) | Other 2 · Satellite and remote sensing 2 · Experiment 1 · Survey instrument 1 |
-| Social & Governance | 40 | 35 (88 %) | Experiment 4 · Survey instrument 4 · Satellite and remote sensing 4 · Regulatory filing parsing 2 · Other 2 · NLP 1 |
-| ESG Disclosure & Ratings | 38 | 34 (89 %) | Experiment 5 · Survey instrument 4 · Other 4 · NLP 2 · Regulatory filing parsing 2 · Meta-analysis 1 |
+| Social & Governance | 40 | 35 (88 %) | Experiment 4 · Satellite and remote sensing 4 · Survey instrument 4 · Regulatory filing parsing 2 · Other 2 · NLP 1 |
+| ESG Disclosure & Ratings | 38 | 34 (89 %) | Experiment 5 · Other 4 · Survey instrument 4 · Regulatory filing parsing 2 · NLP 2 · Meta-analysis 1 |
 
 ## Currency of the evidence
 
