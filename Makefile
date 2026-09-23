@@ -1,10 +1,11 @@
 # Sustainable Finance Data — build targets.
 # Standard library only, so no virtualenv is required to build or verify.
-# The one exception is `make import`, which needs openpyxl to read the workbook.
+# Two exceptions: `make import` needs openpyxl to read the workbook, and
+# `make figures` needs matplotlib to draw them.
 
 PY ?= python3
 
-.PHONY: all import build derive docs verify check-links check-links-offline clean help
+.PHONY: all import build derive docs figures verify check-links check-links-offline clean help
 
 all: build verify
 
@@ -26,6 +27,10 @@ docs:
 	$(PY) scripts/check_links.py --no-probe
 	$(PY) scripts/build_docs.py
 
+## figures: redraw the seven figures printed in the thesis (needs matplotlib)
+figures: derive
+	$(PY) scripts/make_figures.py
+
 ## verify: re-derive every headline figure independently and assert it
 verify:
 	$(PY) scripts/verify.py
@@ -44,6 +49,7 @@ clean:
 	rm -f data/sustfin_datasets.csv data/sustfin_datasets.json data/stats.json
 	rm -f data/link_inventory.csv
 	rm -f docs/CATALOGUE.md docs/CITATIONS.md docs/STATS.md docs/LINK_CHECKS.md
+	rm -f figures/*.png figures/FIGURE_SERIES.md
 
 ## help: list targets
 help:
