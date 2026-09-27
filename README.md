@@ -256,6 +256,4 @@ Built from the corpus hand-coded for *Data in Sustainable Finance: Sources,
 Methods and Availability in the Top Finance Journals, 2010–2026*, a master's
 thesis at the University of Zurich (Department of Banking and Finance).
 Version 1.0 corresponds to the frozen 109-paper corpus the thesis reports;
-later additions extend the catalogue without altering that baseline. This
-repository was named `open-sustainable-finance-data` through v1.0.0; GitHub
-redirects the old name to `sustainable-finance-data`.
+later additions extend the catalogue without altering that baseline.
