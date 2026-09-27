@@ -12,7 +12,7 @@ url: "https://github.com/btogno/sustainable-finance-data"
 doi: 10.5281/zenodo.22925180
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.22925180
+    value: 10.5281/zenodo.22925179
     description: "Concept DOI resolving to the latest version"
 version: 1.0.0
 version: 1.0.0
