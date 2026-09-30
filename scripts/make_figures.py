@@ -4,7 +4,7 @@ make_figures.py — draw the seven figures printed in the thesis.
 Input : data/sustfin_datasets.json   (the derived table written by derive.py)
 Output: figures/fig4_1.png … figD_3.png
 
-Every series is computed here from the derived table and nowhere else, so a
+Every series is computed here from the derived table, so a
 recoded paper moves the figures exactly as it moves docs/STATS.md. The only
 third-party requirement is matplotlib; the rest of the build stays
 standard-library only, which is why this runs from its own target rather than
