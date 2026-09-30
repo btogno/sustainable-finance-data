@@ -60,8 +60,7 @@ every build.
 **Looking for data to reuse.** Start with Tiers 1 to 3 below, then the top
 of [the catalogue](docs/CATALOGUE.md). Check the coverage column before the
 availability column: the median study in this corpus stops collecting data four
-years before it is published, so a great many open assets are already too old
-for a question about the present.
+years before it is published.
 
 **Assessing how reproducible a literature is.** Use
 [`data/sustfin_datasets.csv`](data/sustfin_datasets.csv). The `openness_score`,
