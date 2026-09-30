@@ -1,5 +1,5 @@
 """
-build_docs.py — render the human-readable repository from the derived data.
+build_docs.py — render the repository from the derived data.
 
 Reads  : data/sustfin_datasets.json, data/link_inventory.csv
 Writes : docs/CATALOGUE.md   one row per paper, all 109, sorted by availability
