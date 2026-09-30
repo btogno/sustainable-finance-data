@@ -75,9 +75,7 @@ figures are redrawn by `make figures`, which also writes
 text, so a figure can be checked without rerunning it. Four appendix tables are
 not generated here: named sources, licensing exposure by period, the pre- and
 post-2023 journal split, and the nine topic flags shown beside the six clusters.
-Those are computed in the thesis's analytical workbook, which this repository
-does not ship. Where the thesis and the repository disagree on anything the
-build produces, the build is correct.
+Those are computed in the thesis's analytical workbook.
 
 ## Tiers
 
